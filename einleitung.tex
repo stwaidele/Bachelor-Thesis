@@ -3,29 +3,31 @@
 
 \subsection{Begründung der Problemstellung} % (fold)
 \label{sub:begrundung_der_problemstellung}
-Dienstleistungen im Gastgewerbe werden in der Regel von unterschiedlichen Abteilungen eines Betriebs, aber auch durch im Zusammenspiel mehrerer Betriebe erbracht. Hierbei ist es üblich, dass Buchungs- oder Abrechnungsdaten elektronisch zwischen den Leistungsträgern übermittelt werden. Bei der Zimmerreservierung kann z.B. neben dem Buchungsportal im Internet und dem Reservierungssystem des Hotels noch ein Channel–Manager als weitere Komponente die Reservierung verarbeiten. Im Hotelrestaurant werden Leistungen erbracht und in das Kassensystem verbucht, von wo die Gesamtrechnung dann zum Hotelprogramm übermittelt wird, damit der Gast am Ende des Aufenthalts alles zusammen bezahlen kann.
-
-Hierbei scheint es so zu sein, dass nachträgliche Korrekturen an den getätigten Buchungen deutlich einen weitaus geringeren Integrationsgrad aufweisen, als wünschenswert wäre. Dies bringt Probleme auf unterschiedlichen Ebenen mit sich: Wenn Reservierungsdaten oder eine Restaurantrechnung geändert werden muss, dann ist dies i.d.R. eine für Gast und Mitarbeiter eine Situation, die so nicht geplant war. Nachträgliche Minderungen des Rechnungsbetrags sind z.B. oft ein Mittel, um unzufriedene Gäste wieder zu versöhnen. Gerade in solchen Situationen wird die Unterstützung durch das \ac{IKS} dringend benötigt, da die volle Aufmerksamkeit dem Gast gewidmet sein sollte.
-
-Außerdem wirken sich solche Änderungen meist auf den verbuchten Umsatz aus, was sowohl  Provisionszahlungen an die vermittelnden Dienstleister als auch die betriebsinterne Kostenrechnung und nicht zuletzt auch die abzuführenden Steuern beeinflusst. Somit sind neben dem gastgewerblichem Betrieb selbst auch die Geschäftsparner sowie die Finanzbehörde an einer korrekten Handhabung solcher Geschäftsvorgänge interessiert.
 % subsection begrundung_der_problemstellung (end)
+
+Online--Plattformen nehmen eine zentrale Rolle im Alltag von Studierenden ein. An Fernhochschulen werden hier zunächst die organisatorischen Aufgaben wie die An- und Abmeldungen zu Präsenzseminaren und Prüfungen und die Notenbekanntgabe abgewickelt. Darüber hinaus werden aber auch immer mehr Aufgaben der Wissensvermittlung und des Lernens über das Internet wahrgenommen. Hierzu stehen eine große Auswahl an Kommunikatinsformen zur Verfügung, welche für unterschiedliche Aspekte des Lernens genutzt werden können.
+
+Internetforen gehören zu den ältesten Werkzeugen des Web 2.0 und ermöglichen es Gruppen, sich über Lerninhalte auszutauschen. Hierbei ist es auch möglich, dass das Wissen nicht nur von den Dozenten zu den Studierenden weitergegeben wird, sondern die Studierenden können sich auch gegenseitig Fragen beantworten und gegebenenfalls gemeinsam Lösungen erarbeiten. Hierbei ist eine Gliederung in verschieden große Organisationseinheiten\footnote{z.B. in modulspezifische Foren, studiengangs- oder studienbereichspezifische Foren bis hin zum Austausch mit allen eingeschreibenen Studierenden der Hochschule.} möglich.
+
+Ein solches Kommunikationsangebot ist sorgfältig mit den anderen Elementen des Studiums, sowohl online als auch offline, abzustimmen.
 
 \subsection{Ziele dieser Arbeit} % (fold)
 \label{sub:ziele_dieser_arbeit}
-\textbf{Ziel dieser Arbeit ist es, integrierte Geschäftsprozesse im Gastgewerbe auf ihre korrekte und benutzerfreundliche Behandlung von Korrekturbuchungen zu untersuchen.}
+\textbf{Ziel dieser Arbeit ist es, ein Forenkonzept für die Lernplattform einer Fernhochschule zu erstellen, welches das Lernen und den Studienablauf unterstützt.}
 
-Hierzu werden im Kapitel~\myref{sec:korrekturbuchungen} die Notwendigkeit und die Auswirkungen von Korrekturbuchungen untersucht bevor in Kapitel~\myref{sec:geschaftsprozesse}zunächst die entsprechenden Geschäftsprozesse und Schnittstellen beschrieben. Die hierzu erarbeiteten Referenzprozesse stellen aufgrund der überwiegend deduktiven Vorgehensweise den Soll–Zustand dar. Im Kapitel~\myref{sec:anforderungen} werden dann die Anforderungen der unterschiedlichen Prozessbeteiligten erarbeitet. Der Ist–Zustand mit den am Markt befindlichen Systemen wird im Kapitel~\myref{sec:analyse_vorhandener_systeme} untersucht, um diese dann anhand der im Grundlagenteil erstellten Anforderungen zu bewerten.
+Hierzu werden im Kapitel~\myref{sec:kommunikationsformen_im_internet} zunächst die verschiedenen Möglichkeiten der Kommunikation im Internet betrachtet und anschließend werden in den Kapiteln~\myref{sec:ziele} und \myref{sec:technische_und_wirtschaftliche_aspekte} die Anforderungen an das Forensystem sowie dessen Anforderungen an Budget und Technik ermittelt. Eine Betrachtung von verschiedenen Beispielen erfolgreicher Forensysteme schließt in Kapitel~\myref{sec:best_practice} den Grundlagenteil dieser Arbeit ab.
+
+Nach einer kurzen Vorstellung der bereits ausgewählten Forensoftware in Kapitel~\myref{sec:beschreibung_der_forensoftware} werden in den folgenden Kapiteln Empfehlungen für die Benutzer- und Themenstruktur sowie der umzusetzenden Funktionalität erarbeitet. In den Kapiteln~\myref{sec:redaktionelles_konzept} und \myref{sec:controlling} folgen Empfehlungen für die aktive inhaltliche Gestaltung sowie für die Messung der Zielerreichung.
 % subsection ziele_dieser_arbeit (end)
 
 \subsection{Methodik} % (fold)
 \label{sub:methodik}
-Diese Arbeit stützt sich auf Literaturrecherche. Hierzu werden für die Prozesserstellung neben Literatur zur Geschäftsprozessmodelierung auch Fach– und Lehrbücher zur Gastronomie und zum Steuerrecht herangezogen. Für Beschreibung der am Markt befindlichen Systeme wird die Dokumentation der Hersteller genutzt, welche an den notwendigen Stellen durch Befragung von Experten im Gastgewerbe, bei den Systemherstellern und bei Internetdienstleistern sowie durch eigene Untersuchungen an den zur Verfügung stehenden laufenden Systemen ergänzt wird.
+Literaturrecherche, Expertenbefragungen, evt. Onlineumfrage unter Studierenden
 % subsection methodik (end)
 
 \subsection{Abgrenzung} % (fold)
 \label{sub:abgrenzung}
-
-
+Pädagogischer Nutzen und Notwendigkeit wird vorausgesetzt und nicht explizit untersucht.
 
 % subsection abgrenzung (end)
 
