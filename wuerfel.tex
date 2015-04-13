@@ -1,0 +1,77 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Welcome to Overleaf --- just edit your LaTeX on the left,
+% and we'll compile it for you on the right. If you give
+% someone the link to this page, they can edit at the same
+% time. See the help menu above for more info. Enjoy!
+%
+% Note: you can export the pdf to see the result at full
+% resolution.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% :Author: Stefan Kottwitz
+% :Source: TeXblog - TikZ: shaded cube
+%          http://texblog.net/latex-archive/graphics/tikz-cube-3d/
+\begin{comment}
+
+:Title: Sudoku 3D cube
+:Tags: 3D, Transformations
+
+This example shows how to create an effective 3D effect using the ``slant`` transformation.
+Shading has been added to enhance the 3D impression. Read more about this example over
+at TeXblog_. 
+
+.. _TeXblog: http://texblog.net/latex-archive/graphics/tikz-cube-3d/
+
+:Author: Stefan Kottwitz
+:Source: `TeXblog - TikZ: shaded cube`__
+
+.. __: http://texblog.net/latex-archive/graphics/tikz-cube-3d/
+
+\end{comment}
+\begin{figure}[H]
+\begin{center}
+\begin{tikzpicture}[every node/.style={minimum size=1cm},on grid, scale=3]
+\begin{scope}[every node/.append style={yslant=-0.5},yslant=-0.5]
+%  \shade[right color=gray!10, left color=black!50] (0,0) rectangle +(2,2);
+  \node at (0.5,1.6) {geringe};
+  \node at (0.5,1.4) {Relevanz};
+  \node at (1.5,1.6) {hohe};
+  \node at (1.5,1.4) {Relevanz};
+  \node at (0.5,0.6) {geringe};
+  \node at (0.5,0.4) {Relevanz};
+  \node at (1.5,0.6) {hohe};
+  \node at (1.5,0.4) {Relevanz};
+  \draw (0,0) grid (2,2);
+\end{scope}
+\begin{scope}[every node/.append style={yslant=0.5},yslant=0.5]
+%  \shade[right color=gray!70,left color=gray!10] (2,-2) rectangle +(2,2);
+  \node at (2.5,-0.4) {hohes};
+  \node at (2.5,-0.6) {Potential};
+  \node at (3.5,-0.4) {hohes};
+  \node at (3.5,-0.6) {Potential};
+  \node at (2.5,-1.4) {geringes};
+  \node at (2.5,-1.6) {Potential};
+  \node at (3.5,-1.4) {geringes};
+  \node at (3.5,-1.6) {Potential};
+  \draw (2,-2) grid (4,0);
+\end{scope}
+\begin{scope}[every node/.append style={
+    yslant=0.5,xslant=-1},yslant=0.5,xslant=-1
+  ]
+ % \shade[bottom color=gray!10, top color=black!80] (4,2) rectangle +(-2,-2);
+  \node at (2.5,1.6) {hohe};
+  \node at (2.5,1.4) {Dringlichkeit};
+  \node at (2.5,0.6) {hohe};
+  \node at (2.5,0.4) {Dringlichkeit};
+  \node at (3.5,1.6) {geringe};
+  \node at (3.5,1.4) {Dringlichkeit};
+  \node at (3.5,0.6) {geringe};
+  \node at (3.5,0.4) {Dringlichkeit};
+  \draw (2,0) grid (4,2);
+\end{scope}
+\end{tikzpicture}
+\caption{Einteilung der Forenbeiträge}
+\label{fig:wuerfel}
+\end{center}
+\end{figure}
