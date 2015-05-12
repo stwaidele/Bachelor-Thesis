@@ -1,8 +1,19 @@
 \addcontentsline{toc}{section}{Grundlagen}
 \label{sec:grundlagen}
 
-\section{Computerunterstützes Lernen} % (fold)
-\label{sec:computer_supported_collaborative_learning}
+\section{Begriffe \& Definitionen} % (fold)
+\label{sec:definitionen}
+
+\subsection{Lernen} % (fold)
+\label{sub:lernen}
+\begin{quote}„Learning through personal experience and knowledge, which propagates from generation to generation, is at the heart of human intelligence. Also, at the heart of any scientific field lies the development of models (often, they are called theories) in order to explain the available experimental evidence at each time period. In other words, we always learn from data. Different data and different focuses on the data give rise to different scientific disciplines.“\footnote{\cite{mlearning}, Abschnitt „1.1 What Machine Learning is About“}
+\end{quote}
+
+\begin{quote}„Lernen im Sinne von Wissenserwerb kann als der Aufbau und die fortlaufende Modifikation von Wissensrepräsentationen definiert werden. [Es] ist ein bereichsspezifischer, komplexer und mehrstufiger Prozess, der die Teilprozesse des Verstehens, Speicherns und Abrufens einschließt.“\footnote{\cite{steiner}, Seite 164, zitiert nach \cite{dehaan}, Seite 4}
+\end{quote}
+
+Den obigen Zitaten zu Folge geschieht Lernen durch Erfahrung, die Weitergabe von Wissen sowie durch die Interpretation von Daten. Daten können durch den Lernprozess zu Information und Wissen werden. Im Lernprozess sind sowohl die Lehrenden als auch die Lernenden aktiv handelnde Personen. Manche Teilprozesse können von einem Individuum bzw. von einem Paar aus Lehrer und Lerner, alle beschriebenen Teilprozesse können aber auch in Zusammenarbeit von Gruppen, auch mit wechselnden Rollen durchgeführt werden.
+% subsection lernen (end)
 
 \subsection{E-Learning} % (fold)
 \label{sub:e_learning}
@@ -24,7 +35,6 @@ Im \buzz{\ac{OCP}} einer Hochschule\footnote{auch \ac{OCS}} werden die unterschi
 
 Interaktion kann wie in Tabelle~\ref{tab:ocpinteractive} gezeigt in verschiedenen Ausprägungen auftreten:
 
-
 \begin{table}[h]
 \begin{tabular}{|l|l|m{4cm}|m{4cm}|}
 \hline 
@@ -39,86 +49,84 @@ Interaktion kann wie in Tabelle~\ref{tab:ocpinteractive} gezeigt in verschiedene
 
 % subsection online_campus_portal (end)
 
-
-
-% section computer_supported_collaborative_learning (end)
-
-
-
-\subsection{Beschreibung des OCP} % (fold)
-\label{sub:beschreibung_des_ocp}
-
-% subsection beschreibung_des_ocp (end)
-
-\subsection{Benötigte Schnittstellen} % (fold)
-\label{sub:benotigte_schnittstellen}
-z.B. Benutzerverwaltung, Trouble–Ticket–System, etc.
-% subsection benotigte_schnittstellen (end)
-
-\subsection{Integration mit vorhandenen Systemen} % (fold)
-\label{sub:integration_mit_vorhandenen_systemen}
-Designelemente \& Benutzerführung
-% subsection integration_mit_vorhandenen_systemen (end)
-
-% section online_campus_portal (end)
-
-\section{Kommunikationsformen im Internet} % (fold)
-\label{sec:kommunikationsformen_im_internet}
-
-\subsection{Kommunikationsmodell} % (fold)
-\label{sub:kommunikationsmodell}
+\subsection{Kommunikation} % (fold)
+\label{sub:kommunikation}
 Kommunikation wird von \cite{shannonweaver} als Informationsübertragung beschrieben, die Zwischen einer Quelle  und einem Empfänger\footnote{In der Orginalskizze vom „Receiver“ also „Empfänger” und der „Destination“, also Ebenfalls „Empfänger” gesprochen. Aufgrund der Doppeldeutigkeit im Deutschen wird der „Receiver“ in dieser Arbeit stets als „Dekodierer“ bezeichnet.} mit Hilfe eines Übertragungsmediums stattfindet. Vor der Übertragung werden die Informationen vom Sender kodiert und nach der Übertragung vom Empfänger dekodiert.\footnote{vgl. \cite{shannonweaver}, Seite 34} Während im ursprünglichen, technischen Modell Störungen lediglich bei der Übertragung stattfinden, wurde das Modell auf die Kommunikation zwischen Menschen erweitert, bei der auch bei der Kodierung und Dekodierung Fehler auftreten können.
 
 Bei der Kommunikation zwischen Menschen wird somit nach diesem Modell die Botschaft in Worte kodiert, akkustisch oder schriftlich übertragen, und anschließend wieder vom Empfänger dekodiert. Da bei schriftlicher Kommunikation im Vergleich zum persönlichen Gespräch Details wie Betonung und Gesichtsausdruck, Körperhaltung, etc. nicht übermittelt werden, besteht auch hier beim Kodieren und Dekodieren erhöhtes Fehlerpotential.\footnote{vgl. \cite{rothe}, Seite 10f}
 
-% subsection kommunikationsmodell (end)
+Die Kommunikation lässt sich nach den Dimensionen Synchronität, Senderzahl \& Empfängerzahl und Symmetrie des Wissensniveaus differenzieren. Diese Aspekte sowie der Betreuungsgrad, die Dauer des Bestehens der Lerngruppe, die Ziele welche erreicht werden sollen sowie die Zielgruppe (z.B. nach Alter oder vorhandenem Bildungsstand) bestimmen das konkrete Szenario, für welches die passenden Konzepte, Methoden und Werkzeuge gewählt werden müssen. \footnote{vgl. \cite{csclcomp}, Seite 3}
 
-\subsection{Anzahl der Teilnehmer} % (fold)
-\label{sub:anzahl_der_teilnehmer}
-1 zu 1 vs. 1 zu viele vs. viele zu viele Kommunikation
-% subsection anzahl_der_teilnehmer (end)
+Aufgrund der schnellen Übertragung über das Internet ist die Synchronität nicht nur durch die gewählte Kommunikationsform, sondern durch die Verfügbarkeit der Kommunikationspartner und die Möglichkeit der  Zwischenspeicherung festgelegt. Durch schnelle Benutzerreaktion können eigentlich asynchrone Kommunikationsformen quasi synchron genutzt werden und umgekehrt. In dieser Arbeit sollen Kommunikationsformen als synchron angesehen werden, die ein schnelles Hin-- und Her von Nachrichten zwischen den Teilnehmern fördert, wie z.B. (Video--)Telefonie oder Chatsysteme. Asynchron werden dahingegen die Kommunikationsformen bezsichnet, welche i.d.R. so genutzt werden, bzw. die Aufgrund Ihrer Struktur eine Form des Austauschs fördern, die durch längere oder länger durchdachte Beiträge charakterisiert wird, wie z.B. E--Mail oder Forenbeiträge.
 
-\subsection{Synchronität} % (fold)
-\label{sub:synchronitat}
-Synchrone vs. Asynchrone Kommunikation
-% subsection synchronitat (end)
+% subsection kommunikation (end)
 
-\subsection{Elemente des Web 2.0} % (fold)
-\label{sub:elemente_des_web_2_0}
-Interaktiv, jeder „produziert“, keine Zuschauer
-% subsection elemente_des_web_2_0 (end)
+\subsection{Daten, Information, Wissen}
+\label{sub:defwissen}
 
-\subsection{Haftung im Web 2.0} % (fold)
-\label{sub:haftung_im_web_2_0}
+In dieser Arbeit sollen die folgenden Definitionen gelten: Ein \buzz{Datum} ist eine formalisierte Sachverhaltsaussage, ohne inhärente Bedeutung (z.B. „23°C“). Durch Interpretation im Kontext kann daraus eine \buzz{Information} werden (z.B. „Die Außentemperatur beträgt 23°C“).\footnote{vgl. \cite{kfk}, Seite 40} Durch Vernetzung mehrerer Informationen miteinander, aber auch durch Erfahrung kann \buzz{informatives Wissen} entstehen (z.B. „Das Wetter ist schön“).\footnote{vgl. \cite{pnik}, Seite 106}
 
-% subsection haftung_im_web_2_0 (end)
+In weiteren Verfeinerungsschritten entsteht dann \buzz{handlungsorientiertes Wissen}, (z.B. „Ich benötige beim Nachmittagsspaziergang keinen Pullover“) das dann zu einer konkreten Entscheidung führen kann (z.B. „Ich lasse den Pullover zu Hause.“).\footnote{vgl. \cite{taylor}, Seite 342}
 
-\subsection{Semantik} % (fold)
-\label{sub:semantik}
-Web DREI NULL!!!
-% subsection semantik (end)
+\subsection{Web 1.0, Web 2.0}
 
-\subsection{Forensysteme} % (fold)
+Unter \buzz{Web 1.0} versteht man das \buzz{\ac{WWW}} wie es ursprünglich entwickelt wurde: Eine Menge von statischen Daten, die miteinander auf willkürliche Weise verknüpft werden konnten. Die Auszeichnungssprache \buzz{\ac{HTML}} ermöglicht es Autoren, bestimmte Abschnitte zu kennzeichnen. Schon hier gibt es unterschiedliche Informationsstufen der Auszeichnungen: Während \code{<b>…</b>} lediglich aussagt, dass der ausgezeichnete Abschnitt in fetter Schriftart angezeigt werden soll, ist eine mit \code{<h1>…</h1>} ausgezeichnete Überschrift tatsächlich als solche zu erkennen. Auch wenn die dadurch gewonnene Information für ein automatisch erstelltes Inhaltsverzeichnis schon nützlich sein kann, wird hier keine Aussage bzgl. des eigentlichen Inhalts getroffen. Somit sind die Dokumente des Web 1.0 dem Bereich der \buzz{Daten}\index{Daten} zuzuordnen. Darin enthalten Information bzw. in einem solchen Hypertextsystem enthaltenes Wissen ist erst zugänglich, wenn diese von Menschen gelesen und ausgewertet werden.\footnote{vgl. \cite{alkhatib}, Seite xvi} 
+
+Die Daten des \buzz{Web 2.0} werden i.d.R. in Datenbanken vorgehalten und die Webseiten erst bei Abruf generiert. Durch die Popularität von Werkzeugen wie Blogs und Wikis sind deutlich mehr Menschen an der Erstellung der Inhalte beteiligt. Diese werden auch mit sogenannten \buzz{Meta--Daten} angereichert. Hierdurch wird in maschinenlesbarer Form angegeben, welche Informationen die Dokumente enthalten. Neben vom Autor selbst zugeordneten \buzz{Taxonomien} kommen auch automatisch generierte Meta--Daten hinzu. Beispiele hierfür sind etwa das Veröffentlichungsdatum, Beziehungen zu anderen Dokumenten\footnote{Realisiert durch sog. Backtracks -- „Wer verlinkt auf dieses Dokument?“} oder Geoinformationen („Wo wurde das Dokument erstellt?“). Inzwischen werden auch die Stimmung des Autors erfragt (z.B. bei Runtastic–Aktivitäten bzw. Facebook--Einträgen) oder durch Textanalyse ermittelt (z.B. bei der Auswertung von Produktrezessionen\footnote{vgl. \cite{sprejz}, Seite 11ff}). Die durch Daten und Meta--Daten erzielte Informationsstufe ist deutlich über der von \buzz{Web 1.0} einzuordnen, unterliegt aber je nach genutzter Software bzw. Nutzereingaben deutlichen Schwankungen.
+
+Das \buzz{Web 2.0} ist durch einen hohen Grad an Interaktivität gelennzeichnet. Die Einstiegshürden sind niedrig, so dass durch Kommentar bzw. Antwortfunktionen oder auch durch die Möglichkeit selbst Beiträge zu erstellen jeder Nutzer auch zum Produzierenden werden kann. Diese Eigenschaft bewirkt dass die Werkzeuge des \buzz{Web 2.0} sich für die Nutzung in \buzz{\ac{CSCL}--Umgebungen} empfehlen.\footnote{vgl. \cite{livingston}, Abschnitt „Web 2.0 and blended learning“}
+
+\subsection{Web 3.0 = Web 2.0 + Semantik = Semantisches Web}
+
+„\buzz{Semantik}, auch \buzz{Bedeutungslehre}, nennt man die Theorie oder Wissenschaft von der Bedeutung der Zeichen. Zeichen können in diesem Fall Wörter, Phrasen oder Symbole sein. Die Semantik beschäftigt sich typischerweise mit den Beziehungen zwischen den Zeichen und den Bedeutungen dieser Zeichen.“\footnote{\cite{wp:semantik}}
+
+Im \buzz{Web 3.0} werden die Daten bzw. Informationen des Web 2.0 durch Beifügung von Bedeutung zu Information bzw. informativem Wissen veredelt\footnote{vgl. \cite{nyt:markoff}}. Hierdurch soll es den Lernenden ermöglicht werden, die gesammelten Datenmengen sinnvoll zu nutzen\footnote{vgl. \cite{tsp:tolksdorf}}. Die Bezeichnung \buzz{semantisches Web} ermöglicht eine Abgrenzung gegenüber anderen Interpretationen des Begriffs \buzz{Web 3.0}, wie sie z.T. im Marketing\footnote{z.B. „Web 3.0 marketing is the convergence of new technologies and rapidly changing consumer buying trends.“ in \cite{web3market}, Abschnitt „What is Web 3.0 Marketing?“} oder in der Politikwissenschaft\footnote{z.B. „Is this Web 3.0? Not a tech-upgrade, a smarter algorithm, slicker fibre optic or better Bluetooth beam. Instead, Web 3.0 as in an outcome, the demonstrated consequences of being able to access information?“ in \cite{web3pol}, Abschnitt „Web 3.0: Regime Change“} zu finden sind.
+
+% section definitionen (end)
+
+\section{Werkzeuge des CSCL} % (fold)
+\label{sec:werkzeuge_des_cscl}
+
+\subsection{Forensystem} % (fold)
 \label{sub:forensysteme}
-
+Bei \buzz{Online--Foren} handelt es sich um Systeme mit deren Hilfe die beliebig viele Nutzer selbst gewählte Themen asynchron diskutieren können. Die Themen sind meist in Themenbereich bzw. Unterforen gegliedert. Eine Einstufung der Nutzer aufgrund der bereits verfassten Beiträge ist üblich, durch regelmäßig Nutzung kann also eine Reputation aufgebaut werden. Moderatoren können für Themenbereiche oder das gesamte Forum bestimmt werden, die neben der Konfiguration der Themenstruktur im Bedarfsfall auch die Möglichkeit haben, die Beiträge anderer Nutzer zu bearbeiten oder Benutzerkonten zu sperren. Die Forenbeiträge sind i.d.R. für alle Nutzer sichtbar. Benutzer können Themen abonnieren oder sich die seit dem letzen Besuch neu hinzugekommenen Beiträge anzeigen lassen, womit die Interaktion gefördert wird.
 % subsection forensysteme (end)
 
-\subsection{Trouble–Ticket–Systmee} % (fold)
+\subsection{Trouble–Ticket–System} % (fold)
 \label{sub:trouble_ticket_systmee}
-
- \ac{TTS}
+Bei einem \ac{TTS} handelt es sich um ein Nachrichtensystem, das Benutzeranforderungen wie etwa Supportanfragen entgegennimmt und diese einem Betreuungsteam zur Verfügung stellt. Die Anfragen können dann von beliebigen Teammitgliedern beantwortet, gekennzeichnet oder an Spezialisten weitergeleitet werden. Die Antwort wird dann über das System an den Fragesteller zurück übermittelt. Durch entsprechende Kennzeichnungen können noch offene Anfragen schnell erkannt werden. 
 % subsection trouble_ticket_systmee (end)
 
-\subsection{Wikis} % (fold)
+\subsection{Wiki} % (fold)
 \label{sub:wikis}
+Wikis sind Schreibsysteme, bei denen die Nutzer gemeinsam an Dokumenten arbeiten können. Neue Wiki--Seiten lassen sich einfach erstellen und sind i.d.R. für alle Nutzer sichtbar. Die Bearbeitung steht allen Teilnehmern offen. Zu den grundlegenden Funktionen gehört ein einfacher Markup--Syntax oder ein \ac{WYSIWYG} Editor für \ac{HTML}, eine Versionsverwaltung um Bearbeitungen nachvollziehen und bei Bedarf rückgängig machen zu können, die Auflistung von kürzlich bearbeiteten Seiten. Einzelne Seiten oder Themenbereiche können abonniert werden. Die ersten Wiki--Systeme waren ohne jegliche Benutzerhierarchie, inzwischen ist jedoch eine Nutzerverwaltung und Rollenverteilung üblich. Meist gibt es für Wikis keine oder nur sehr lockere redaktionelle Vorgaben, um möglichst viele Nutzer zur Mitarbeit zu motivieren. Hierdurch, in Kombinatino mit der Versionsverwaltung, eignen sich Wikis gut für die gemeinsame, kontinuierliche Erarbeitung von Dokumenten.
 
+Eine spezielle Form von Wikis\footnote{z.B. Etherpad} erlauben die gleichzeitige Bearbeitung der Seiten durch mehrere Benutzer.
 % subsection wikis (end)
 
-\subsection{Knowledge--Bases} % (fold)
+\subsection{Knowledge--Base} % (fold)
 \label{sub:knowledge_bases}
-
+In einer Kknowledge--Base werden Dokument gesammelt, die häufig wiederkehrende oder grundlegende Themen ausführlich besprechen. Die hier verfügbaren Dokumente sind redaktionell erstellt und können Informationen aus  anderen Kommunikationsmitteln zusammenfassen, verdichten und vertiefen. Die eingesetzte Software kann ein Wiki--System sein, jedoch ist die Herangehensweise formeller, um die gewünschte Qualität sicherstellen zu können.
 % subsection knowledge_bases (end)
-% section kommunikationsformen_im_internet (end)
+
+\subsection{Persönliche Kommunikationsmittel} % (fold)
+\label{sub:personliche_kommunikationsmittel}
+E--Mail, Skype, Chat, ...
+% subsection personliche_kommunikationsmittel (end)
+
+\subsection{Zusammenspiel der Werkzeuge} % (fold)
+\label{sub:zusammenspiel_der_werkzeuge}
+
+% subsection zusammenspiel_der_werkzeuge (end)
+
+\subsection{Lizenzen} % (fold)
+\label{sub:lizenzen}
+
+\url{http://www.ted.com/talks/richard_baraniuk_on_open_source_learning#t-826694}
+
+% subsection lizenzen (end)
+
+% section werkzeuge_des_cscl (end)
 
 
 \section{Ziele} % (fold)
