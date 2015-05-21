@@ -242,47 +242,6 @@ Von den acht möglichen Einstufungen sind die folgenden besonders Beachtenswert:
 
 % section ziele (end)
 
-\section{Technische und wirtschaftliche Aspekte} % (fold)
-\label{sec:technische_und_wirtschaftliche_aspekte}
-
-\subsection{Benötige Hard- und Software} % (fold)
-\label{sub:benotige_hard_und_software}
-Die konkrete benötigte Software hängt von Entscheidungen ab, die in dieser Arbeit nicht weiter betrachtet werden, wie z.B. ob eine hochintegrierte Lösung individuell erstellt wird, oder ob vorhandene Systeme integriert werden sollen. Aufgrund der Textlastigkeit der Werkzeuge sind mit üblicher Hardware auch große Nutzergruppen handhabbar, so lange diese Werkzeuge nur schwach integriert sind.\footnote{vgl. z.b \cite{phpbblarge} für Foren oder \cite{dwlarge} für Wikis}
-
-Für höhere Integrationsanforderungen sollten genauere Tests und Anforderungsanalysen durchgeführt werden.
-% subsection benotige_hard_und_software (end)
-
-\subsection{Benötigte Schnittstellen} % (fold)
-\label{sub:benotigte_schnittstellen}
-Die für die Integration wichtigste Schnittstelle ist die zur Benutzerverwaltung des \ac{OCP}. Die Studierenden sollen sich mit einem Benutzernamen und Passwort beim System anmelden. Dieses Login soll dann auch für alle Teilsysteme und CSCL–Werkzeuge gültig sein.
-
-Um die Anfragen der Studierenden mit dem \ac{TTS} überwachen zu können, ist eine Schnittstelle vom Forum zum \ac{TTS} notwendig, die bei neuen Fragen entsprechende Vorgänge erzeugt und bei Antworten auf Fragen diese je nach Rolle und Status des Antwortenden bzw. durch entsprechende Schlüsselworte in der Diskussion den Status der erzeugten Vorgänge ändert.
-
-Ebenso ist eine Schnittstelle zwischen dem Wiki und der Wissensbasis wünschenswert, über die ein Review-- und Integrationsprozess unterstützt wird.\footnote{vgl. \cite{governor}, Abschnitt „The Participation-Collaboration Pattern“}
-
-Rechtssicherheit und Qualität lassen sich durch eine Schnittstelle zwischen Wiki bzw. Wissensbasis und einem System zur automatischen Prüfung auf Plagiate erhöhen. Über die gleiche Schnittstelle könnten auch weitere Textanalysen durchgeführt werden, welche die Inhalte automatisch verschlagworten könnte.
-% subsection benotigte_schnittstellen (end)
-
-\subsection{Integration mit vorhandenen Systemen} % (fold)
-\label{sub:integration_mit_vorhandenen_systemen}
-Die einzelnen Teilsysteme haben sich optisch in das Vorhandene \ac{OCP} einzugliedern. Ein schnelles, beutzerfreundliches Wechseln zwischen den einzelnen Werkzeugen soll möglich sein. Benachrichtigungen über Reaktionen auf eigene Beiträge sollten über ein einheitliches System, werkzeugübergreifend zugestellt werden.
-% subsection integration_mit_vorhandenen_systemen (end)
-
-\subsection{Benötigtes Budget} % (fold)
-\label{sub:benotigtes_budget}
-Es müssen Mittel für die Entwicklung und für den Betrieb bereitgestellt werden. Bei der Realisierung als Individualsoftware sind die Entwicklungskosten im Vergleich zu Standartkomponenten höher. Aber auch die Integration von fertigen Teilsystemen muss im Budget berücksichtigt sein. Diese Kosten treten nicht regelmäßig auf, sondern lediglich vor der Einführung, während des Customizing sowie bei Updates auf.
-
-Die Kosten für Server und Lizenzen stellen einen Teil der laufenden Kosten dar, dessen größter Teil allerdings in den Personalkosten für die technische, organisatorische sowie akademische Betreuung des Angebots ausmacht.
-
-% subsection benotigtes_budget (end)
-
-\subsection{Demand Management im CSCL} % (fold)
-\label{sub:demand_management}
-Um die gegebenen personellen Resourcen möglichst effizient einsetzen zu können, kann ein Demand Management System eingesetzt werden, welches den Großteil der täglichen Anfragen der Lernenden durch Tutoren\footnote{z.B. Studierende aus höheren Semestern, die das entsprechende Modul bereits bearbeitet haben} beantworten lässt, welche komplizierte Fragen im Bedarfsfall die Dozenten bzw. Professoren oder bei Verwaltungsfragen  die zuständigen Mitarbeiter auf die Probleme aufmerksam macht.\footnote{Übertragung des Prinzips „Demand Management“ aus dem Gesundheitswesen, vgl. \cite{gabler:demandmanagement}}
-% subsection demand_management (end)
-
-% section technische_und_wirtschaftliche_aspekte (end)
-
 \section{Best Practice \& Marktanalyse} % (fold)
 \label{sec:best_practice}
 
