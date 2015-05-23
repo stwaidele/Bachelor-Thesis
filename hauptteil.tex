@@ -73,7 +73,10 @@ Rechtssicherheit und Qualität lassen sich durch eine Schnittstelle zwischen Wik
 
 \subsection{Integration mit vorhandenen Systemen} % (fold)
 \label{sub:integration_mit_vorhandenen_systemen}
-Die einzelnen Teilsysteme haben sich optisch in das Vorhandene \ac{OCP} einzugliedern. Ein schnelles, beutzerfreundliches Wechseln zwischen den einzelnen Werkzeugen soll möglich sein. Benachrichtigungen über Reaktionen auf eigene Beiträge sollten über ein einheitliches System, werkzeugübergreifend zugestellt werden.
+Die einzelnen Teilsysteme haben sich optisch in das Vorhandene \ac{OCP} einzugliedern. Ein schnelles, beutzerfreundliches Wechseln zwischen den einzelnen Werkzeugen soll möglich sein. Benachrichtigungen über Reaktionen auf eigene Beiträge soll über ein einheitliches System, werkzeugübergreifend zugestellt werden.
+
+Das gesamte System sollte seine Inhalte mit Hilfe moderner Web–Technologien darstellen. Eine schlichte Übernahme des Print–Layouts genügt diesem Anspruch nicht. Die Anzeige und idealer Weise auch die Bearbeitung von Inhalten soll auch auf Tablets und Smartphones möglich sein.
+ 
 % subsection integration_mit_vorhandenen_systemen (end)
 
 \subsection{Benötigtes Budget} % (fold)
@@ -86,7 +89,7 @@ Die Kosten für Server und Lizenzen stellen einen Teil der laufenden Kosten dar,
 
 \subsection{Demand Management im CSCL} % (fold)
 \label{sub:demand_management}
-Um die gegebenen personellen Resourcen möglichst effizient einsetzen zu können, kann ein Demand Management System eingesetzt werden, welches den Großteil der täglichen Anfragen der Lernenden durch Tutoren\footnote{z.B. Studierende aus höheren Semestern, die das entsprechende Modul bereits bearbeitet haben} beantworten lässt, welche komplizierte Fragen im Bedarfsfall die Dozenten bzw. Professoren oder bei Verwaltungsfragen  die zuständigen Mitarbeiter auf die Probleme aufmerksam macht.\footnote{Übertragung des Prinzips „Demand Management“ aus dem Gesundheitswesen, vgl. \cite{gabler:demandmanagement} in den Kontext des Fernstudiums \cite{ojstersek}, Seite 127}
+Um die gegebenen personellen Resourcen möglichst effizient einsetzen zu können, kann ein Demand Management System eingesetzt werden, welches den Großteil der täglichen Anfragen der Lernenden durch Tutoren\footnote{z.B. Studierende aus höheren Semestern, die das entsprechende Modul bereits bearbeitet haben, vgl. \cite{ojstersek}, Seite 135f} beantworten lässt, welche komplizierte Fragen im Bedarfsfall die Dozenten bzw. Professoren oder bei Verwaltungsfragen  die zuständigen Mitarbeiter auf die Probleme aufmerksam macht.\footnote{Übertragung des Prinzips „Demand Management“ aus dem Gesundheitswesen, vgl. \cite{gabler:demandmanagement} in den Kontext des Fernstudiums \cite{ojstersek}, Seite 127}
 % subsection demand_management (end)
 
 % section technische_und_wirtschaftliche_aspekte (end)
@@ -127,6 +130,20 @@ Die Kombination von Forum, Wiki, Wissensbasis und einer von der Hochschule als a
 \subsection{Wiki--Seiten und Wissensbasis} % (fold)
 \label{sub:wiki_seiten_zur_zusammenarbeit}
 Wenn eine Forendiskussion sich über mehrere Beiträge hinweg entwickelt, kann es hilfreich sein, die von unterschiedlichen Personen beigesteuerten Teillösungen in einer oder mehreren Wikiseiten zu strukturieren und konsolidieren. Hierbei kann die Zusammenarbeit an einem gemeinsamen Text eingeübt werden. Die hier entstehenden Texte können bei entsprechender Qualität das Fundament für neue Artikel in der Wissensbasis dienen. Ebenso können Artikel der Wissensbasis ins Wiki kopiert werden, um dort gemeinschaftlich daran arbeiten zu können.
+
+\subsection{Anleitungen und Hilfesystem} % (fold)
+\label{sub:anleitungen_und_hilfesystem}
+Wiki und Wissensbasis können auch die Rolle des \ac{CMS} für Informationen und Anleitungen für das \ac{CSCL}–System dienen. Für eine optimale Nutzung des Systems sind die folgenden Inhalte wichtig, die in ihrer Darstellung an das Internet angepasst sein sollten.\footnote{vgl. \cite{euler}, Seite 498f}:
+
+\begin{itemize}
+	\item \textbf{Hinweise zur Usability:}\\ Die Teilnehmer sollen Hinweise erhalten, wie sie als Idividuum und als Gruppe die Lernplattform am effektivsten Nutzen können.
+	\item \textbf{Steuerung der Aufmerksamkeit:}\\ Die Aufmerksamkeit der Teilnehmer sollte auf die Lerninhalte gelenkt werden.
+	\item \textbf{Voraussetzungen, Lernziele und Praxisbezug}\\ Es sollen die Voraussetzungen für ein Modul sowie verbindliche Lernziele klar genannt werden. Außerdem soll den Studierenden die Praxisrelevanz des Lernstoffs kommuniziert werden. Dies kann etwa in den Moduldefinitionen geschehen.
+	\item \textbf{Weiterführende Hinweise:}\\ Die Studierenden sollen Hinweise darauf erhalten, wie sie sich über das im Modul geforderte Maß mit dem Lernstoff auseinandersetzen können. Dies kann in Form von Literaturhinweisen aber auch durch die Verlinkung von Inhalten aller Art im Internet geschehen.
+\end{itemize}
+
+ Weiterhin soll eine direkte Möglichkeit zur Unterstützung bei technischen Problemen mit der Plattform gegeben sein. Diese solltauch über ein anderes Medium wie die Lernplattform selbst, etwa per Telefon, gegeben sein.
+% subsection anleitungen_und_hilfesystem (end)
 % subsection wiki_seiten_zur_zusammenarbeit (end)
 
 % section redaktionelles_konzept (end)
@@ -167,7 +184,9 @@ Zusätzlich zu den automatischen oder auf dem sozialen Netzwerk basierenden Mög
 \footnotetext{\cite{governor}, Abschnitt „The Participation-Collaboration Pattern“}
 % subsection reviews (end)
 
-Durch die Implementierung des \buzz{Participation-Collaboration Patterns} wird eine unkomplizierte Veränderung der Inhalte ermöglicht. Die neue, veränderte Version wird allerdings erst dann der Allgemeinheit angezeigt, wenn ein Reviewer diese auch bestätigt hat. Reviewer sollten die notwendige Sachkenntnis haben, um die Qualität der Beiträge überprüfen zu können.  Da davon auszugehen ist, dass die Rolle der Reviewer unter anderem von Dozenten oder anderen Lerngruppenteilnehmern wahrgenommen wird, sollte sicher gestellt werden, dass niemand seine eigenen Beiträge zum Review erhält.
+Durch die Implementierung des \buzz{Participation-Collaboration Patterns} wird eine unkomplizierte Veränderung der Inhalte ermöglicht. Die neue, veränderte Version wird allerdings erst dann der Allgemeinheit angezeigt, wenn ein Reviewer diese auch bestätigt hat. Reviewer sollten die notwendige Sachkenntnis haben, um die Qualität der Beiträge überprüfen zu können.  Da davon auszugehen ist, dass die Rolle der Reviewer unter anderem von Dozenten oder anderen Lerngruppenteilnehmern wahrgenommen wird, soll sicher gestellt werden, dass niemand seine eigenen Beiträge zum Review erhält.
+
+Ebenfalls sollen die in Abschnitt~\ref{sub:anleitungen_und_hilfesystem} beschriebenen Inhalte periodisch auf Aktualität überprüft und die Nutzungsmuster von Dozenten und Lernenden darauf hin untersucht werden, ob die gewünschten Effekte des gemeinschaftlichen Lernens zum Tragen kommen.
 % section qualitatssicherung (end)
 
 \section{Controlling} % (fold)
@@ -187,10 +206,10 @@ Im Bereich des \ac{CSCL} bieten sich folgende Größen an, die sich auf einzelne
 	\item \textbf{Anzahl der Co-Autoren einer Wiki–Seite}\\ Grad der Bereitschaft zur Zusammenarbeit unter den Teilnehmern.
 	\item \textbf{Qualität der Forenbeiträge und Wikiseiten}\\ Diese Größe kann durch die Auswertung von „Upvotes“ und „Downvotes” ermittelt werden.
 	\item \textbf{Anzahl der Dozenten / Anzahl der Studierenden}\\ Während hier ein möglichst hoher Wert sich positiv auf die Betreungsqualität auswirken sollte, ist aus betriebswirschaftlicher Sicht ein möglichst niedriger Wert erstrebenswert.
-	\item \textbf{Kundenzufriedenheit}\\ Die Zufriedenheit der Studierenden sollte durch Feedback zu den Studienelementen und allgemeinen Befragungen ermittelt werden.
+	\item \textbf{Unterstützung des Lernprozesses}\\ Die Zufriedenheit der Studierenden sollte durch Feedback zu den Studienelementen und allgemeinen Befragungen ermittelt werden.\footnote{vgl. \cite{euler}, Seite 500}
 	\item \textbf{Noten und Absolventenzahlen}\\ Noten und Absolventenzahlen sind ein Mittel, die Erreichung des in Abschnit~\ref{sub:zentrales_ziel_wissenserwerb_studienabschluss} beschriebenen zentralen Ziels des Wissenserwerb und Erlangung eines akademischen Grades kann durch die Teilnehmerzahlen an Klausuren, deren Noten und den erreichten Studienabschlüssen und Noten quantitativ und qualitativ gemessen und verglichen werden.
 \end{itemize}
 
-
+Des weiteren kann durch Logfiles der Lernplattform eine Vielzahl von objektiv–quatitativen Daten erhoben werden, die unter Berücksichtigung des Datenschutz zur Analyse von Verweildauer auf einzelnen Seiten oder in Lernbereichen, Nutzung einzelner Werkzeuge, Suchbegriffen zur Identifikation wiederkehrender Probleme und anderer Aspekte genutzt werden.\footnote{vgl. \cite{euler}, Seite 499f}
 
 % section controlling (end)
