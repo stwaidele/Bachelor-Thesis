@@ -1,4 +1,4 @@
-\section{Plazierung am Markt} % (fold)
+\section{Plazierung der Lernplattform am Markt} % (fold)
 \label{sec:plazierung_am_markt}
 
 \subsection{Welche Communities gibt es schon?} % (fold)
@@ -43,7 +43,7 @@ Einige wenige Bereiche wie die Studienberatung können auch für die Allgemeinhe
 \section{Rechtesystem} % (fold)
 \label{sec:rechtesystem}
 
-\subsection{Authorisierung} % (fold)
+\subsection{Autorisierung} % (fold)
 \label{sub:authorisierung}
 Die Authorisierung der Nutzer geschieht über das vorhandene Login des \ac{OCS}, gegebenenfalls über entsprechende Schnittstellen wie \ac{LDAP} oder ActiveDirectory. Aus dieser Benutzerverwaltung kommen auch Informationen über die Rollen und Rechte des jeweiligen Nutzers. 
 % subsection authorisierung (end)
@@ -52,18 +52,18 @@ Die Authorisierung der Nutzer geschieht über das vorhandene Login des \ac{OCS},
 \label{sub:rollen}
 Als Benutzerrollen bieten sich zunächst die den Benutzergruppen entsprechenden Rollen \textbf{Studierende} und \textbf{Dozenten} an. Für die inhaltliche Betreuung sind zusächlich \textbf{Moderatoren} zu bestimmen, deren Aufgabengebiet sich auf einzelne Teilbereiche eines Werkzeuges (z.B. ein Diskussinosforum des Moduls DBA02) beschränken, oder auf einen gesamten Teilbereich (z.B. für alle Module mit Datenbankbezug, in allen verfügbaren Werkzeugen\footnote{z.B. Diskussionsforum, Wiki, Wissensbasis aber auch Lernmaterialien und Lernvideos}). Schließlich ist die Rolle der \textbf{Administratoren} für Verwaltungsaufgaben wie die Vergabe der Rechte und Rollen zuständig. Auch diese Rolle kann systemweit oder für Teilbereiche vergeben werden. 
 
-Nutzer können gleichzeitig mehreren Rollen zugeordnet sein. So ist es durchaus denkbar, dass Lernende in einzelnen Bereichen die Moderator– oder gar Administratorrolle übernehmen, im Rechtlichen System aber lediglich seine Rolle als Studierender einnimmt.
+Nutzer können gleichzeitig mehreren Rollen zugeordnet sein. So ist es durchaus denkbar, dass Lernende in einzelnen Bereichen die Moderator– oder gar Administratorrolle übernehmen, im restlichen System aber lediglich seine Rolle als Studierender einnimmt.
 % subsection rollen (end)
 
 \subsection{Rechte} % (fold)
 \label{sub:rechte}
-So sollen Studierende im Forum die ihrem Studiengang zugeordneten Module sowie die allgemeinen Bereiche einsehen und dort Beiträge erstellen, kommentieren und beantworten können. Sie sollen Lerngruppen beitreten können oder diese erstellen dadurch Moderator dieser Gruppe werden. Gruppenmoderatoren können das Thema der Gruppe bestimmen und andere Teilnehmer zur Teilnahme einladen und wieder entfernen. Nach dem Erreichen des Gruppenziels kann diese archiviert werden, so dass keine weitere Bearbeitung möglich ist. Der Gruppenmoderator ist für die Einhaltung der Umgangsformen und der rechtlichen Bestimmungen innerhalb seiner Gruppe verantwortlich und kann daher dort auch Beiträge anderer Teilnehmer ausblenden bzw. löschen. In den Modulbereichen übernehmen die Dozenten oder Moderatoren diese Aufgabe.
+Studierende sollen im Forum die ihrem Studiengang zugeordneten Module sowie die allgemeinen Bereiche einsehen und dort Beiträge erstellen, kommentieren und beantworten können. Sie sollen Lerngruppen beitreten können oder diese erstellen und dadurch Moderator dieser Gruppe werden. Gruppenmoderatoren können das Thema der Gruppe bestimmen und andere Teilnehmer zur Teilnahme einladen und wieder entfernen. Nach dem Erreichen des Gruppenziels kann diese archiviert werden, so dass keine weitere Bearbeitung möglich ist. Der Gruppenmoderator ist für die Einhaltung der Umgangsformen und der rechtlichen Bestimmungen innerhalb seiner Gruppe verantwortlich und kann daher dort auch Beiträge anderer Teilnehmer ausblenden bzw. löschen. In den Modulbereichen übernehmen die Dozenten oder Moderatoren diese Aufgabe.
 
 Diese Grundfunktionen und Rechte sind bei den unterschiedlichen Werkzeugen des \ac{CSCL} unterschiedlich ausgestaltet. Beim Wiki werden im Vergleich zum Forum umfangreichere Rechte eingeräumt. So kann dort jeder Nutzer die Beiträge der anderen Ändern und sogar löschen, da dies zur Grundfunktionalität von Wikis gehört und es durchaus üblich ist, dass vorhandene Wikiseiten von mehreren Autoren stark bearbeitet und z.T. ganze Bereiche des Wikis mit mehreren Seiten umstrukturiert werden, um die Qualität zu erhöhen. 
 
 Bei der Wissensbasis und den Lernunterlagen gilt das Gegenteil: Hier sind sämtliche Eintragungen durch einen entsprechenden Qualitätssicherungsprozess zu überwachen und nur nach offizieller Prüfung frei zu schalten. Selbst Änderungen von Dozenten sollten hier erst nach einem Review in die offizielle Version eingehen.\footnote{siehe auch Abschnitt~\myref{sub:reviews}}
 
-Ein Vorschlag für die Benutzerrechte für die jeweiligen Rollen findet sich im Anhang~\myref{sub:vorschlag_rollen_und_rechte}.
+Ein Vorschlag für die Benutzerrechte für die jeweiligen Rollen findet sich im Anhang 2.
 % subsection rechte (end)
 
 % section rechtesystem (end)
@@ -87,7 +87,7 @@ Um die Anfragen der Studierenden mit dem \ac{TTS} überwachen zu können, ist ei
 
 Ebenso ist eine Schnittstelle zwischen dem Wiki und der Wissensbasis wünschenswert, über die ein Review-- und Integrationsprozess unterstützt wird.\footnote{vgl. \cite{governor}, Abschnitt „The Participation-Collaboration Pattern“}
 
-Rechtssicherheit und Qualität lassen sich durch eine Schnittstelle zwischen Wiki bzw. Wissensbasis und einem System zur automatischen Prüfung auf Plagiate erhöhen. Über die gleiche Schnittstelle könnten auch weitere Textanalysen durchgeführt werden, welche die Inhalte automatisch verschlagworten könnte.
+Rechtssicherheit und Qualität lassen sich durch eine Schnittstelle zwischen Wiki bzw. Wissensbasis und einem System zur automatischen Prüfung auf Plagiate erhöhen. Über die gleiche Schnittstelle könnten auch weitere Textanalysen durchgeführt werden, welche die Inhalte automatisch verschlagworten könnten.
 % subsection benotigte_schnittstellen (end)
 
 \subsection{Integration mit vorhandenen Systemen} % (fold)
@@ -145,7 +145,7 @@ Wenn eine Forendiskussion sich über mehrere Beiträge hinweg entwickelt, ist es
 
 \subsection{Anleitungen und Hilfesystem} % (fold)
 \label{sub:anleitungen_und_hilfesystem}
-Wiki und Wissensbasis können auch die Rolle des \ac{CMS} für Informationen und Anleitungen für das \ac{CSCL}–System dienen. Für eine optimale Nutzung des Systems sind die folgenden Inhalte wichtig, die in ihrer Darstellung an das Internet angepasst sein sollten.\footnote{vgl. \cite{euler}, Seite 498f}:
+Wiki und Wissensbasis können auch die Rolle des \ac{CMS} für Informationen und Anleitungen für das \ac{CSCL}–System dienen. Für eine optimale Nutzung des Systems sind die folgenden Inhalte wichtig, die in ihrer Darstellung an das Internet angepasst sein sollten:\footnote{vgl. \cite{euler}, Seite 498f}
 
 \begin{itemize}
 	\item \textbf{Hinweise zur Usability:}\\ Die Teilnehmer sollen Hinweise erhalten, wie sie als Idividuum und als Gruppe die Lernplattform am effektivsten Nutzen können.
@@ -184,7 +184,7 @@ Wichtig ist jedoch, dass bereits die Meldung eines Teilnehmers zu einer schnelle
 % subsection prufung_auf_plagiate (end)
 
 \subsection{Reviews} % (fold)
-Zusätzlich zu den automatischen oder auf dem sozialen Netzwerk basierenden Möglichkeiten der Qualitässicherung ist zumindest für Änderungen oder Ergänzungen in der Wissensbasis oder in den Lernmaterialien zusätzlich eine Begutachtung mit dem ausdrücklichen Ziel der Qualitätssicherung notwendig. Die genannten Felder bilden die Grundlage für die Lehre der Hochschuld und Änderungen daran sollten entsprechend sorgfältig gehandhabt werden.
+Zusätzlich zu den automatischen oder auf dem sozialen Netzwerk basierenden Möglichkeiten der Qualitässicherung ist zumindest für Änderungen oder Ergänzungen in der Wissensbasis oder in den Lernmaterialien zusätzlich eine Begutachtung mit dem ausdrücklichen Ziel der Qualitätssicherung notwendig. Die genannten Felder bilden die Grundlage für die Lehre der Hochschule und Änderungen daran sollten entsprechend sorgfältig gehandhabt werden.
 
 \label{sub:reviews}
 \begin{figure}[H]
@@ -221,18 +221,19 @@ Im Bereich des \ac{CSCL} bieten sich folgende Größen an, die sich auf einzelne
 \begin{itemize}
 	\item \textbf{Größe}\\ Die Anzahl der Beiträge in Forum, Wiki und in der Wissensbasis welche in einer Periode erstellt worden sind sowie die Anzahl der registrierten Nutzer. Stellt ein quantitatives Merkmal dar. 
 	\item \textbf{Nutzerakzeptanz}\\ Diese 
-	 quantitativen Verhältnis stellen die Erreichung des in Abschnitt~\ref{sub:nutzerakzeptanz} beschriebenen Ziels der Akzeptanz des \ac{CSCL} bei der Hauptzielgruppe, basierend auf der Nutzerzahl oder der Anzahl der gestllten Anfragen, dar.
+	 quantitativen Verhältnis stellen die Erreichung des in Abschnitt~\ref{sub:nutzerakzeptanz} beschriebenen Ziels der Akzeptanz des \ac{CSCL} bei der Hauptzielgruppe, basierend auf der Nutzerzahl oder der Anzahl der gestellten Anfragen, dar.
 \begin{align}
 	 { Akz }_{ Person }\quad &=\quad \frac { aktive\quad Nutzer\quad im\quad CSCL\quad \times \quad 100 }{ registrierte\quad Nutzer } \notag \\
 	 { Akz }_{ Frage }\quad &=\quad \frac { Anfragen\quad im\quad CSCL\quad \times \quad 100 }{ gestellte\quad Anfragen } \notag
 \end{align}
+Über alle Zielgruppen hinweg kann die Anzahl der Nutzer die Fragen im Forum stellen, Nutzer die diese Beantworten, Nutzer die Wikiseiten erstellen und derer die diese editieren als Indikatoren für die Akzeptanz des Systems genutzt werden.
 	\item \textbf{Antwortzeiten im Forum}\\ Dieser Wert stellt wie in Abschnitt~\ref{sub:erp4students} beschrieben einen Teilaspekt für die Betreuungsqualität dar.
 	\item \textbf{Involvement der Studierenden}\\ Stellt den Anteil des Wissenstransfer der durch Studierende erfolgt dar. Dieser Wert stellt ein quantitatives Merkmal dar denn die tatsächliche Qualität der Antworten wird nicht ermittelt.
 \begin{align}
 	 { Inv }_{ Studierende }\quad &=\quad \frac { Anworten\quad von\quad Studierenden\quad \times \quad 100 }{ Antworten \quad insgesamt } \notag
 \end{align}
 	\item \textbf{Anzahl der Co-Autoren einer Wiki–Seite}\\ Dieser Wert kann Aussagen über den Grad der Bereitschaft zur Zusammenarbeit unter den Teilnehmern machen.
-	\item \textbf{Qualität der Forenbeiträge und Wikiseiten}\\ Diese Größe kann durch die Auswertung von „Upvotes“ und „Downvotes” ermittelt werden.
+	\item \textbf{Qualität der Forenbeiträge und Wikiseiten}\\ Diese Größe kann durch die Auswertung von „Upvotes“ und „Downvotes” ermittelt werden. Als Maß für die Steigerung der inhaltlichen Qualität kann die Anzahl der aus Forum, Wiki und Wissensbasis in die Studienmaterialien aufgenommenen Inhalte herangezogen werden. Um einfache Rechtschreibkorrekturen von Umfangreichen inhaltlichen Aktualisierungen unterscheiden zu können, bietet sich eine entsprechende Gewichtung, etwa nach geänderten Buchstaben oder nach Kategorien\footnote{z.B. Rechtschreibkorrektur: 1 Punkt, Aktualisierung von Daten ohne fachliche Änderung: 2 Punkte, Inhaltliche Korrekturen: 5 Punkte pro Absatz, etc.} an.
 	\item \textbf{Effizienz der Betreuung}\\ Während hier ein möglichst hoher Wert sich positiv auf die Betreungsqualität auswirken sollte, ist aus betriebswirschaftlicher Sicht ein möglichst niedriger Wert erstrebenswert.
 \begin{align}
 	Effizienz_{ Betreuung }\quad &=\quad \frac { Anzahl\quad Lernenden }{ Anzahl\quad der\quad Dozenten } \notag
