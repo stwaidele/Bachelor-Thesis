@@ -37,18 +37,34 @@ Für Lerngruppen sollte die Möglichkeit bestehen, ihren Bereich nur für Mitgli
 
 Einige wenige Bereiche wie die Studienberatung können auch für die Allgemeinheit geöffnet werden. Da diese Bereiche dann auch Suchmaschinen zugänglich sind, besteht hier auch Potential für die Kommunikation zu potentiellen Studierenden und somit zur Neukundengewinnung.
 % subsection reichweite (end)
+% section plazierung_am_markt (end)
 
-\subsection{Rechtesystem} % (fold)
-\label{sub:rechtesystem}
-Die Authorisierung der Nutzer geschieht über das vorhandene Login des \ac{OCS}, gegebenenfalls über entsprechende Schnittstellen. Aus dieser Benutzerverwaltung kommen auch Informationen über die Rollen und Rechte des jeweiligen Nutzers. 
+\newpage
+\section{Rechtesystem} % (fold)
+\label{sec:rechtesystem}
 
-So sollen Studierende im Forum die ihrem Studiengang zugeordneten Module sowie die allgemeinen Bereiche einsehen und dort Beiträge erstellen, kommentieren und beantworten können. Sie sollen Lerngruppen beitreten können oder diese erstellen dadurch Verwalter dieser Gruppe werden. Gruppenverwalter können das Thema der Gruppe bestimmen und andere Teilnehmer zur Teilnahme einladen und wieder entfernen. Nach dem Erreichen des Gruppenziels kann diese archiviert werden, so dass keine weitere Bearbeitung möglich ist. Der Gruppenverwalter ist für die Einhaltung der Umgangsformen und der rechtlichen Bestimmungen innerhalb seiner Gruppe verantwortlich und kann daher dort auch Beiträge anderer Teilnehmer ausblenden bzw. löschen. In den Modulbereichen übernehmen die Dozenten oder Moderatoren diese Aufgabe.
+\subsection{Authorisierung} % (fold)
+\label{sub:authorisierung}
+Die Authorisierung der Nutzer geschieht über das vorhandene Login des \ac{OCS}, gegebenenfalls über entsprechende Schnittstellen wie \ac{LDAP} oder ActiveDirectory. Aus dieser Benutzerverwaltung kommen auch Informationen über die Rollen und Rechte des jeweiligen Nutzers. 
+% subsection authorisierung (end)
+
+\subsection{Rollen} % (fold)
+\label{sub:rollen}
+Als Benutzerrollen bieten sich zunächst die den Benutzergruppen entsprechenden Rollen \textbf{Studierende} und \textbf{Dozenten} an. Für die inhaltliche Betreuung sind zusächlich \textbf{Moderatoren} zu bestimmen, deren Aufgabengebiet sich auf einzelne Teilbereiche eines Werkzeuges (z.B. ein Diskussinosforum des Moduls DBA02) beschränken, oder auf einen gesamten Teilbereich (z.B. für alle Module mit Datenbankbezug, in allen verfügbaren Werkzeugen\footnote{z.B. Diskussionsforum, Wiki, Wissensbasis aber auch Lernmaterialien und Lernvideos}). Schließlich ist die Rolle der \textbf{Administratoren} für Verwaltungsaufgaben wie die Vergabe der Rechte und Rollen zuständig. Auch diese Rolle kann systemweit oder für Teilbereiche vergeben werden. 
+
+Nutzer können gleichzeitig mehreren Rollen zugeordnet sein. So ist es durchaus denkbar, dass Lernende in einzelnen Bereichen die Moderator– oder gar Administratorrolle übernehmen, im Rechtlichen System aber lediglich seine Rolle als Studierender einnimmt.
+% subsection rollen (end)
+
+\subsection{Rechte} % (fold)
+\label{sub:rechte}
+So sollen Studierende im Forum die ihrem Studiengang zugeordneten Module sowie die allgemeinen Bereiche einsehen und dort Beiträge erstellen, kommentieren und beantworten können. Sie sollen Lerngruppen beitreten können oder diese erstellen dadurch Moderator dieser Gruppe werden. Gruppenmoderatoren können das Thema der Gruppe bestimmen und andere Teilnehmer zur Teilnahme einladen und wieder entfernen. Nach dem Erreichen des Gruppenziels kann diese archiviert werden, so dass keine weitere Bearbeitung möglich ist. Der Gruppenmoderator ist für die Einhaltung der Umgangsformen und der rechtlichen Bestimmungen innerhalb seiner Gruppe verantwortlich und kann daher dort auch Beiträge anderer Teilnehmer ausblenden bzw. löschen. In den Modulbereichen übernehmen die Dozenten oder Moderatoren diese Aufgabe.
 
 Diese Grundfunktionen und Rechte sind bei den unterschiedlichen Werkzeugen des \ac{CSCL} unterschiedlich ausgestaltet. Beim Wiki werden im Vergleich zum Forum umfangreichere Rechte eingeräumt. So kann dort jeder Nutzer die Beiträge der anderen Ändern und sogar löschen, da dies zur Grundfunktionalität von Wikis gehört und es durchaus üblich ist, dass vorhandene Wikiseiten von mehreren Autoren stark bearbeitet und z.T. ganze Bereiche des Wikis mit mehreren Seiten umstrukturiert werden, um die Qualität zu erhöhen. 
 
 Bei der Wissensbasis und den Lernunterlagen gilt das Gegenteil: Hier sind sämtliche Eintragungen durch einen entsprechenden Qualitätssicherungsprozess zu überwachen und nur nach offizieller Prüfung frei zu schalten. Selbst Änderungen von Dozenten sollten hier erst nach einem Review in die offizielle Version eingehen.\footnote{siehe auch Abschnitt~\myref{sub:reviews}}
-% subsection rechtesystem (end)
-% section plazierung_am_markt (end)
+
+% subsection rechte (end)
+% section rechtesystem (end)
 
 \newpage
 \section{Technische Aspekte} % (fold)
@@ -184,14 +200,20 @@ Durch die Implementierung des \buzz{Participation-Collaboration Patterns} wird e
 Ebenfalls sollen die in Abschnitt~\ref{sub:anleitungen_und_hilfesystem} beschriebenen Inhalte periodisch auf Aktualität überprüft und die Nutzungsmuster von Dozenten und Lernenden darauf hin untersucht werden, ob die gewünschten Effekte des gemeinschaftlichen Lernens zum Tragen kommen.
 % section qualitatssicherung (end)
 
-\newpage
 \section{Controlling} % (fold)
 \label{sec:controlling}
 
+\subsection{Überblick} % (fold)
+\label{sub:uberblick}
 Controlling stellt die Koordinationsfunktion zwischen Planung, Organisation, Information, Personalführung und Kontrolle dar.\footnote{vgl. \cite{woehe}, 188f}
 
-Controlling durch Kennzahlen nutzt die konzentrierte numerische Darstellung von quantitativ darstellbaren Sachverhalten für die Erfolgsmessung sowie als Basis für Entscheidungen.\footnote{vgl. \cite{reichmann}, Seite 25} Dies kann intern durch die Beobachtung einer Kennzahl über einen bestimmten Zeitraum oder extern durch den Vergleich mit anderen Anbietern am Markt geschehen. Daher sind Kennzahlen idael, die periodisch erfasst werden können und die auch bei anderen Communities ermittelbar sind.
+Controlling durch Kennzahlen nutzt die konzentrierte numerische Darstellung von quantitativ darstellbaren Sachverhalten für die Erfolgsmessung sowie als Basis für Entscheidungen.\footnote{vgl. \cite{reichmann}, Seite 25} Dies kann intern durch die Beobachtung einer Kennzahl über einen bestimmten Zeitraum oder extern durch den Vergleich mit anderen Anbietern am Markt geschehen. Daher sind Kennzahlen ideal, die periodisch erfasst werden können und die auch bei anderen Communities ermittelbar sind.
 
+Des weiteren kann durch Logfiles der Lernplattform eine Vielzahl von objektiv–quatitativen Daten erhoben werden, die unter Berücksichtigung des Datenschutz zur Analyse von Verweildauer auf einzelnen Seiten oder in Lernbereichen, Nutzung einzelner Werkzeuge, Suchbegriffen zur Identifikation wiederkehrender Probleme und anderer Aspekte genutzt werden.\footnote{vgl. \cite{euler}, Seite 499f}
+% subsection uberblick (end)
+
+\subsection{Messgrößen für das Controlling in CSCL–Systemen} % (fold)
+\label{sub:messgrossen_fur_das_controlling_in_cscl_systemen}
 Im Bereich des \ac{CSCL} bieten sich folgende Größen an, die sich auf einzelne Beiträge oder Teilnehmer, auf Modulebene und Teilnehmergruppen oder auf ganze Werkzeuge wie das Forum oder das Wiki beziehen können:
 
 \begin{itemize}
@@ -211,9 +233,11 @@ Im Bereich des \ac{CSCL} bieten sich folgende Größen an, die sich auf einzelne
 	Effizienz_{ Betreuung }\quad =\quad \frac { Anzahl\quad Lernenden }{ Anzahl\quad der\quad Dozenten } 
 \end{align}	
 	\item \textbf{Unterstützung des Lernprozesses}\\ Die Zufriedenheit der Studierenden sollte durch Feedback zu den Studienelementen und allgemeinen Befragungen ermittelt werden.\footnote{vgl. \cite{euler}, Seite 500}
-	\item \textbf{Noten und Absolventenzahlen}\\ Noten und Absolventenzahlen sind ein Mittel, die Erreichung des in Abschnit~\ref{sub:zentrales_ziel_wissenserwerb_studienabschluss} beschriebenen zentralen Ziels des Wissenserwerb und Erlangung eines akademischen Grades kann durch die Teilnehmerzahlen an Klausuren, deren Noten und den erreichten Studienabschlüssen und Noten quantitativ und qualitativ gemessen und verglichen werden. 
+	\item \textbf{Noten und Absolventenzahlen}\\ Die Erreichung des in Abschnit~\ref{sub:zentrales_ziel_wissenserwerb_studienabschluss} beschriebenen zentralen Ziels des Wissenserwerb und Erlangung eines akademischen Grades kann durch die Teilnehmerzahlen an Klausuren, deren Noten und den erreichten Studienabschlüssen und Noten quantitativ und qualitativ gemessen und verglichen werden. 
 \end{itemize}
 
-Des weiteren kann durch Logfiles der Lernplattform eine Vielzahl von objektiv–quatitativen Daten erhoben werden, die unter Berücksichtigung des Datenschutz zur Analyse von Verweildauer auf einzelnen Seiten oder in Lernbereichen, Nutzung einzelner Werkzeuge, Suchbegriffen zur Identifikation wiederkehrender Probleme und anderer Aspekte genutzt werden.\footnote{vgl. \cite{euler}, Seite 499f}
+Diese Größen sind nur zum Teil objektiv aus dem System zu ermitteln. Für die anderen empfliehlt sich die Erstellung eines detaillierten Bewertungsmaßsstabs, um subjektive Einflüsse auf das Controlling möglichst auszuschließen.
+
+% subsection messgrossen_fur_das_controlling_in_cscl_systemen (end)
 
 % section controlling (end)
